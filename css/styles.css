@@ -14,9 +14,26 @@
   --style-color: #404bbf;
   --accent-color-second: #f4f4fd;
 }
+/* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -47,6 +64,57 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*==== flexbox==== */
+/* .flexbox-container { 
+display: flex;
+flex-direction: row;
+/* } */
+
+.page-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.work-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
 /* =============== /COMPONENTS====================== */
 /*================= HEADER =======================*/
 .logo {
@@ -76,6 +144,13 @@ body {
   color: var(--style-color);
 }
 
+.work-item-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
@@ -98,9 +173,15 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--contrast-text-color);
+  margin-bottom: 48px;
+  width: 494px;
 }
 
 .button {
+  min-width: 169px;
+  min-height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -138,6 +219,17 @@ body {
 
 .our-team {
   background-color: var(--accent-color-second);
+}
+
+.work-item {
+  width: 360px;
+  margin-bottom: 48px;
+}
+
+.work-team-wrapper {
+  border: 1px solid var(--dark-color-theme);
+  border-top: none;
+  padding: 32px 0px;
 }
 
 /* footer */
