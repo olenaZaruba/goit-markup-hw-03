@@ -30,6 +30,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -291,6 +293,7 @@ body {
     0px 1px 1px var(--accent-color-border-16),
     0px 2px 1px var(--accent-color-border-8);
   border-radius: 0px 0px 4px 4p;
+  width: 264px;
 }
 
 .page-header {
