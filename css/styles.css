@@ -13,6 +13,8 @@
   --accent-color: #4d5ae5;
   --style-color: #404bbf;
   --accent-color-second: #f4f4fd;
+  --accent-color-border-8: rgba(46, 47, 66, 0.08);
+  --accent-color-border-16: rgba(46, 47, 66, 0.16);
 }
 /* reset styles */
 h1,
@@ -50,6 +52,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .section-subtitle {
@@ -57,6 +60,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-discription {
   font-size: 16px;
@@ -113,19 +117,28 @@ body {
 
 .team-list {
   display: flex;
+  gap: 24px;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-list {
   display: flex;
   flex-direction: row;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  justify-content: center;
+  gap: 24px;
 }
 
 .work-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
 }
 
 .work-item {
@@ -194,9 +207,6 @@ body {
   background-color: var(--primary-text-color);
 }
 
-/* .hero-container { 
-  text-align: center;
-}*/
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -205,7 +215,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--contrast-text-color);
   margin-bottom: 48px;
-  width: 494px;
 }
 
 .button {
@@ -231,6 +240,8 @@ body {
 .hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
+  width: 494px;
 }
 
 .button:hover,
@@ -249,6 +260,10 @@ body {
   color: var(--accent-color);
   background-color: var(--accent-color-second);
   cursor: pointer;
+  border: 1px solid var(--dark-color-theme);
+  display: block;
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 
 .project-button:hover,
@@ -263,13 +278,22 @@ body {
 
 .work-item {
   width: 360px;
-  margin-bottom: 48px;
 }
 
 .work-team-wrapper {
   border: 1px solid var(--dark-color-theme);
   border-top: none;
-  padding: 32px 0px;
+  padding: 32px 16px;
+}
+
+.team-members-wrapper {
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--contrast-text-color);
+  box-shadow: 0px 1px 6px var(--accent-color-border-8),
+    0px 1px 1px var(--accent-color-border-16),
+    0px 2px 1px var(--accent-color-border-8);
+  border-radius: 0px 0px 4px 4p;
 }
 
 .page-header {
@@ -285,10 +309,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color-theme);
+  margin-top: 16px;
 }
 .light-logo {
   color: var(--accent-color-second);
 }
 .footer {
   background-color: var(--primary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
