@@ -67,6 +67,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  width: 264px;
 }
 
 .container {
@@ -77,7 +78,6 @@ body {
 
 .section {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 /*==== flexbox==== */
@@ -110,9 +110,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 24px;
-}
-.benefits-item {
-  width: 264;
 }
 
 .team-list {
@@ -241,7 +238,6 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-  width: 494px;
 }
 
 .button:hover,
@@ -274,6 +270,7 @@ body {
 
 .our-team {
   background-color: var(--accent-color-second);
+  padding-bottom: 120px;
 }
 
 .work-item {
@@ -310,6 +307,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-color-theme);
   margin-top: 16px;
+  width: 264px;
 }
 .light-logo {
   color: var(--accent-color-second);
