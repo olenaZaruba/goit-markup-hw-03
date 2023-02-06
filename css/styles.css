@@ -69,7 +69,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  width: 264px;
 }
 
 .container {
@@ -125,8 +124,8 @@ body {
 .project-list {
   display: flex;
   flex-direction: row;
-  padding-top: 96px;
-  padding-bottom: 72px;
+
+  margin-bottom: 72px;
   justify-content: center;
   gap: 24px;
 }
@@ -137,7 +136,6 @@ body {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
 }
 
 .work-item {
@@ -204,6 +202,7 @@ body {
 /*==================== Hero =========================*/
 .hero {
   background-color: var(--primary-text-color);
+  padding: 188px 0px;
 }
 
 .main-title {
@@ -214,6 +213,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--contrast-text-color);
   margin-bottom: 48px;
+}
+
+.main-menu {
+  padding: 96px 0px 120px 0px;
 }
 
 .button {
@@ -237,8 +240,6 @@ body {
 }
 
 .hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
   text-align: center;
 }
 
@@ -301,6 +302,10 @@ body {
   border-top: none;
   border-right: none;
   border-left: none;
+}
+
+.work {
+  padding-bottom: 120px;
 }
 
 /* footer */
